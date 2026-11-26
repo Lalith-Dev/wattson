@@ -1,0 +1,51 @@
+[
+  {
+    "id": "cheapest_tonight",
+    "question": "What's the cheapest time to charge my car in L1 tonight?",
+    "expect_tools": ["get_cheapest_times"],
+    "must_include": ["32.92"],
+    "must_include_any": ["23:00", "11pm", "11 pm", "published"]
+  },
+  {
+    "id": "messy_postcode",
+    "question": "cheapest half hour for l1 8jq?",
+    "expect_tools": ["get_cheapest_times"],
+    "must_include": ["32.92"]
+  },
+  {
+    "id": "greenest_24h",
+    "question": "I'm in Liverpool L1. When's the greenest time to run my washing machine in the next 24 hours?",
+    "expect_tools": ["get_greenest_times"],
+    "must_include": ["69"]
+  },
+  {
+    "id": "cheapest_and_greenest",
+    "question": "What's the cheapest time and the greenest time to use electricity in L1 today?",
+    "expect_tools": ["get_cheapest_times", "get_greenest_times"],
+    "must_include": ["32.92"]
+  },
+  {
+    "id": "unpublished_saturday",
+    "question": "What's the cheapest time to run my dishwasher on Saturday in L1?",
+    "expect_tools": ["get_cheapest_times"],
+    "must_include_any": ["not published", "not yet", "aren't published", "isn't published", "haven't been published", "unknown", "not available"]
+  },
+  {
+    "id": "no_postcode",
+    "question": "When is electricity cheapest?",
+    "expect_tools": [],
+    "must_include_any": ["postcode"]
+  },
+  {
+    "id": "outside_uk",
+    "question": "What's the cheapest time to use electricity in Paris 75001?",
+    "expect_tools": null,
+    "must_include_any": ["uk", "britain"]
+  },
+  {
+    "id": "greeting",
+    "question": "Hi, what can you do?",
+    "expect_tools": [],
+    "must_include_any": ["cheap", "green", "carbon", "price"]
+  }
+]
