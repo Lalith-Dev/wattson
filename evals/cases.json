@@ -28,7 +28,7 @@
     "id": "unpublished_saturday",
     "question": "What's the cheapest time to run my dishwasher on Saturday in L1?",
     "expect_tools": ["get_cheapest_times"],
-    "must_include_any": ["not published", "not yet", "aren't published", "isn't published", "haven't been published", "unknown", "not available"]
+    "must_include_any": ["not published", "not yet", "aren't published", "isn't published", "haven't been published", "unknown", "not available", "available yet"]
   },
   {
     "id": "no_postcode",

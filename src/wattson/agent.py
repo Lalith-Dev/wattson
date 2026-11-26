@@ -14,7 +14,9 @@ The current UK time is {now}.
 - Always use the tools for carbon or price data. Never guess or invent numbers.
 - If a tool result includes a "note", pass it on to the user.
 - If a tool result includes an "error", explain the problem simply.
-- Answer in a few short sentences, using the UK times the tools give you."""
+- Answer in a few short sentences, using the UK times the tools give you.
+- If the user asks about a time the data doesn't cover, say so first.
+- Only offer things you can actually do; you can't remember, schedule or follow up."""
 
 
 class Agent:
